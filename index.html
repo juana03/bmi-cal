@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>BMI Calculator</h1><br>
+        <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan,
+            berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk hitung sekarang
+            di kalkulator BMI.</p><br>
+
+        <!-- membuat form-nya -->
+        <form>
+            <div class="form-group">
+                <label for="gender">Jenis Kelamin :</label>
+                <div class="form-check">
+                    <input type="radio" name="gender" value="l" id="gender" required="true">
+                    <label class="form-gender" for="gender">
+                        Pria
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="radio" name="gender" value="p" id="gender" required="true">
+                <label class="form-gender" for="gender">
+                    Wanita
+                </label>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <label for="weight">Berat Badan (kg) :</label>
+                    <div class="icon-input">
+                        <i class="fa-solid fa-pencil"></i>
+                        <input type="number" id="weight" required="true">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="height">Tinggi Badan (cm) :</label>
+                <div class="icon-input">
+                    <i class="fa-solid fa-pencil"></i>
+                    <input type="number" id="height" required="true">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="age">Usia (Tahun) :</label>
+                <div class="icon-input">
+                    <i class="fa-solid fa-pencil"></i>
+                    <input type="number" id="age" required="true">
+                </div>
+            </div>
+            <div class="button-group">
+                <button type="submit" onclick="calculateBMI()" href="#result">Calculate BMI</button>
+                <button type="reset" id="reset" class="reset">Reset</button>
+            </div>
+        </form>
+        <div class="card text-center">
+            <div class="card-body">
+                <div class="card-title" id="result">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="button-group">
+            <button type="application/pdf" src="#">Download Hasil BMI</button>
+        </div>
+        <br>
+        <p>Apabila Anda berada dalam kategori overweight atau berat badan berlebih, cara terbaik untuk menurunkan berat
+            badan
+            adalah dengan mengatur kalor makanan yang dikonsumsi dan berolahraga Jika BMI Anda berada dalam kategori ini
+            maka Anda cianjurkan untuk menurunkan berat badan hingga batas normal.</p>
+        <div class="button-group-ahli">
+            <a href="https://www.halodoc.com/tanya-dokter/cari?source=com.halodoc.bmicalculator&category_id=426fb851-f268-4332-8aa3-52c0ff78c27f&category_name=Ahli%20Gizi"
+                target="_blank"><button>Ahli
+                    Gizi Via Aplikasi</button>
+            </a>
+            <a href="https://www.halodoc.com/aplikasi-halodoc" target="_blank"><button>Registrasi Online Ahli
+                    Gizi</button>
+            </a>
+            <br>
+            <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang.
+                Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan
+                Anda.
+            </p>
+            <center>
+                <h3>Download Disini</h3>
+            </center>
+        </div>
+        <div class="aplikasi">
+            <a href="https://play.google.com/store/apps/details?id=com.linkdokter.halodoc.android&hl=in"
+                target="_blank">
+                <img src="https://www.halodoc.com/assets/header-footer/google-play-badge-us.webp">
+            </a>
+            <a href="https://itunes.apple.com/id/app/halodoc-chat-dokter-beli-obat/id1067217981?l=id&mt=8"
+                target="_blank">
+                <img src="https://www.halodoc.com/assets/header-footer/app-store-badge-us-white.webp">
+            </a>
+        </div>
+        <!-- link untuk ke JavaScript -->
+        <script src="js/index.js"></script>
+</body>
+
+</html>
